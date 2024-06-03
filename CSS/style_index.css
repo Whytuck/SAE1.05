@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'maPolice';
+    src: url('League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #2C2424;
+    color: white;
+    font-family: 'maPolice', arial, sans-serif;
+}
+
+/* Header */
+header{
+    background-color: #004952;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+hr{
+    height: 0.5em;
+    background-color: #00d8f0;
+    border-color: #00d8f0;
+}
+
+header figure{
+    float: right;
+}
+
+header figure img{
+    width: 75px;
+}
+
+/* Main */
+
+main section{
+    background-color: #006e7a;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+main section img{
+    border-radius: 10px;
+    display: inline;
+}
+
+main article{
+    margin: 1em;
+}
+
+main article p{
+    font-size: 1.25em;
+}
+
+.ds{
+    display: none;
+}
+
+main section h1{
+    margin: auto;
+    padding: 0.5em;
+    background-color: #004952;
+    border-radius: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #00b8cc;
+    text-align: center;
+    width: 80%;
+}
+
+main h1{
+    margin: 0.25em;
+    padding: 0.5em;
+    background-color: #004952;
+    border-radius: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #00b8cc;
+    text-align: center;
+    width: 340px;
+}
+
+main article img{
+    border-radius: 10px;
+    margin: 0.5em;
+}
+
+/* Footer */
+footer{
+    background-color: #004952;
+    width: 100%;
+}
+
+footer a {
+    margin: 0.5em;
+    padding: 0.2em;
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #0093A3;
+    background-color: #004952;
+}
+
+footer hr{
+    height: 0.5em;
+    background-color: #00d8f0;
+}
+
+footer section div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+footer section div a {
+    border: none;
+}
+
+
+/* MENU */
+header section {
+    background-color: #00d8f0;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    float: right;
+}
+
+.main-menu {
+    display: none;
+    height: 2.5em;
+    text-align: center;
+    align-self: center;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00d8f0;
+}
+
+.main-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-menu a {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em;
+    padding: 0.2em;
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #0093A3;
+    background-color: #004952;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 429px){
+    /* HEADER */
+    header img{
+        width: 60%;
+    }
+
+    /* MENU */
+    .menu-toggle {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    .main-menu a {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0em;
+        padding: 0.2em;
+        text-decoration: none;
+        color: white;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #0093A3;
+        background-color: #004952;
+    }
+
+    /* MAIN */
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+    main section p{
+        display: none;
+    }
+
+    .serie{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .serie img{
+        width: 45%;
+    }
+
+    .anime{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .anime img{
+        width: 45%;
+    }
+    .ds{
+        display: block;
+    }
+
+    .film{
+        margin: 0.5em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .film img{
+        width: 100%;
+    }
+}
+
